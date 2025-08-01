@@ -19,7 +19,7 @@ app.use(express.json());
 
 //CORS Middleware
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin',  ' http://localhost:8081'); // this allows all origins, change as needed
+  res.header('Access-Control-Allow-Origin',  ' http://localhost:8081'); // 
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type,Authorization');
   next();
