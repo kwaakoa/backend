@@ -1,11 +1,11 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql2 = require('mysql2');
 const app = express();
 const PORT = 3000;
 
 
 // Database connection pool
-const pool = mysql.createPool({
+const pool = mysql2.createPool({
   host: 'localhost',      // change as needed
   user: 'root',           // change as needed
   password: '',           // change as needed
