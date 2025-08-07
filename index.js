@@ -55,7 +55,7 @@ app.post('/register-m', (req, res) => {
 
 
 //Individual Registration
-app.post('/register-i', (req, res) => {
+app.post('/api/signup', (req, res) => {
   const { firstname, lastname, phone, email, country, address, password, policies } = req.body;
   
   pool.query(
